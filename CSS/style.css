@@ -1,4 +1,72 @@
+/* Rubik Font */
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* Global Variables */
+:root {
+    --primary-color: #F15A24;
+    --secondary-color: #101010;
+    --primary-font: 'Rubik', sans-serif;
+}
+
+* {
+    font-family: var(--primary-font);
+}
+
 .c-container {
     width: 1255px;
     margin: auto;
+}
+
+
+a.socialLink {
+    color: var(--secondary-color);
+    text-decoration: none;
+    border: 1px solid #7a7a7a66;
+    width: 41px;
+    border-radius: 50%;
+    display: block;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    margin-right: 8px;
+    transition: .5s;
+}
+
+a.socialLink:hover {
+    background: var(--primary-color);
+    color: white;
+    border: none;
+    scale: 1.1;
+    font-size: 19px;
+}
+
+.headerRightBtn {
+    font-size: 24px;
+    margin-left: 14px;
+    position: relative;
+}
+
+span.cartText {
+    position: absolute;
+    top: 17px;
+    margin-left: -10px;
+    font-size: 17px;
+    background: var(--primary-color);
+    color: white;
+    width: 17px;
+    border-radius: 50%;
+    height: 17px;
+    font-size: 11px;
+}
+
+button.headerUserBtn {
+    font-size: 17px;
+    border: 2px solid #232121 !important;
+    border-radius: 50%;
+    padding: 0 5px;
+    font-weight: bold;
+    height: 29px;
+    margin-top: 4px;
 }
